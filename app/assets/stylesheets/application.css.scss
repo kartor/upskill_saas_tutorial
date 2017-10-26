@@ -54,6 +54,16 @@ h1, h2, h3 {
   }
 }
 
+.navbar-btn {
+  background-color: transparent;
+  color: white;
+  &:hover {
+    background-color: transparent;
+    color: white;
+    opacity: 0.75;
+  }
+}
+
 // Home Page Styles
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
