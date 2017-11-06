@@ -3,7 +3,7 @@
     <h2 class="text-center">Sign up</h2>
     
     <div class="row"><!-- form row -->
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {id: 'pro_form'} ) do |f| %>
         <%= devise_error_messages! %>
         <%= hidden_field_tag 'plan', params[:plan] %>
         <div class="col-md-6"><!-- left column -->
@@ -38,7 +38,7 @@
             <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year" } %>
           </div>
           <div class="actions form-group">
-            <%= f.submit "Sign up", class: 'btn btn-success' %> &nbsp; <%= render "devise/shared/links" %>
+            <%= f.submit "Sign up", class: 'btn btn-success', id: 'form-signup-btn' %> &nbsp; <%= render "devise/shared/links" %>
           </div>
         </div><!-- end right column -->
       <% end %>
