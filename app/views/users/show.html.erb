@@ -2,7 +2,7 @@
   <div class="col-md-6 col-md-offset-3">
 
 
-
+    <%= image_tag @user.profile.avatar.url %>
     <%= @user.profile.first_name %> <%= @user.profile.last_name %>
     <%= @user.profile.job_title %>
     <% if current_user.plan_id == 2 %>
