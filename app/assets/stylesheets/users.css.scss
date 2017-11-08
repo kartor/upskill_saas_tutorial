@@ -7,11 +7,19 @@
 .profile-head img {
 	margin: 0 auto;
 	border-radius: 5px;
-  height: 240px;
-  width: 240px;
+  max-height: 240px;
+  max-width: 240px;
 }
 
 .profile-head h5 {
+		width: 100%;
+		padding: 5px 5px 5px 5px;
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 0;
+}
+
+.profile-head h6 {
 		width: 100%;
 		padding: 5px 5px 5px 5px;
 		font-weight: bold;
@@ -23,7 +31,7 @@
 		width: 100%;
 		padding: 5px 5px 5px 5px;
 		font-size: 17px;
-		margin: 0;
+		margin-bottom: 0;
 }
 
 .profile-head ul {
@@ -33,7 +41,7 @@
 
 .profile-head ul li {
 		display: block;
-		padding: 5px;
+		padding: 5px 5px 5px 5px;
 		font-weight: 400;
 		font-size: 15px;
 }

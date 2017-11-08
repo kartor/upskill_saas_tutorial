@@ -1,23 +1,19 @@
 <div class="container">
   <div class="row">
 		<div class="profile-head">
-		  <div class="profiles col-md-10 col-md-push-1  thumbnail">
-        <div class="col-md-3">
+		  <div class="profiles col-sm-10 col-sm-push-1 thumbnail">
+        <div class="col-sm-3">
           <div class="row">
             <%= image_tag @user.profile.avatar.url, class: 'img-responsive' %>
           </div>
         </div>
-				<div class="col-md-9">
+				<div class="col-sm-9">
 				  <div class="row">
-	          <div class="col-md-12"><h5><%= @user.profile.first_name %> <%= @user.profile.last_name %></h5></div>
-            <div class="col-md-6">
+	          <div class="col-sm-12"><h5><%= @user.profile.first_name %> <%= @user.profile.last_name %></h5></div>
+	          <div class="col-sm-12"><h6><span><%= job_title_icon %></span> <%= @user.profile.job_title %></h6></div>
+            <div class="col-sm-12">
 				      <ul>
-				        <li><p><strong>Job Title: </strong> <%= @user.profile.job_title %></p></li>
 				        <li><p><strong>About Me: </strong> <%= @user.profile.description %></p></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul>
                 <% if current_user.plan_id == 2 %>
                   <li><p><strong>Phone Number: </strong> <%= @user.profile.phone_number %></p></li>
                   <li><p><strong>Email: </strong> <%= @user.profile.contact_email %></p></li>
