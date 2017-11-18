@@ -41,3 +41,57 @@
 .well.white-bg {
 	background-color: white;
 }
+
+
+// My show.html.erb css
+.profile-head img {
+	margin: 0 auto;
+	border-radius: 5px;
+	max-height: 240px;
+	max-width: 240px;
+}
+
+.profile-head h1 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+.profile-head h3 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.fa-code:before{
+  font-weight: bold;
+  color: #551A8B;
+}
+
+.fa-dollar:before{
+  color: green;
+}
+
+.fa-lightbulb-o:before{
+  color: yellow;
+}
+
+.profile-head p {
+  width: 100%;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.profile-head ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-head ul li {
+  display: block;
+  padding: 5px 5px 0 5px;
+  font-weight: 400;
+  font-size: 15px;
+}
