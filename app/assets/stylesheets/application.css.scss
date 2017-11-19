@@ -54,26 +54,32 @@ h1, h2, h3 {
   }
 }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #605c3c;
+}
+
 .navbar-btn {
   background-color: transparent;
   color: white;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: transparent;
     color: white;
     opacity: 0.75;
   }
 }
 
-// Home Page Styles
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;  
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
     opacity: 0.75;
   }
 }
 
+// Home Page Styles
 .home-callout {
   color: white;
   margin-top: -20px;
@@ -89,6 +95,7 @@ h1, h2, h3 {
   position: absolute;
   width: 100%;
 }
+
 .alert-notice, .alert-alert {
   //text-align: center;
   background: rgba(255, 255, 255, 0.3);
